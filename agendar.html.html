@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+    <HEAD>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<TITLE>Clinica de Santa Cruz Tepexpan</TITLE>
+ <LINK HREF="css/estilos2.css" REL="STYLESHEET" TYPE="TEXT/CSS"/>
+
+</HEAD>
+
+<BODY>
+<HEADER>
+
+<IMG SRC="img/images.jfif" WIDTH="105" HEIGHT="105"></IMG><H1>PROPUESTA PARA AGENDAR CITAS</H1>
+<br>
+<br>
+
+<table border=0>
+    <tr>
+        
+        <td><h3><a href="index.html">Inicio</a></h3></td>
+        <td><h3><a href="organigrama.html">Estructura de la Clinica</a></h3></td>
+        <td><h3><a href="index2.html">Atencion Medica que brinda</a></h3></td>
+        <td><h3><a href="sabiasque.html">¿Sabias que?</a></h3></td>
+        
+        </tr>
+</table>
+<br>
+<br>
+</HEADER>
+<main>
+<br>
+<br>
+<P>Proponemos que para cambiar la forma en que se realizan las citas medicas actualmente
+     mediante un papel con un número que se va dando mediante vayas llegando y asi puedes obtener tu cita y 
+     propone mos cambiarla mediante un formulario que nos permita ingresar los datos mas importantes como
+      nombre(s),apellido paterno y materno, motivo de la consulta, fecha de la cita y edad para evitar hacer
+       filas y poder hacerlo desde casa.<br><br>A continuación una pequeña explicación del llenado del formulario. </P>
+<UL>
+<LI>CURP</LI>
+<LI>Expediente Medico</LI>
+<LI>NSS</LI>
+</UL>
+<BR><BR>
+  
+ <P>Ingresaras tu CURP o NSS en mayusculas, asegurate que cuente con 18 caracteres </P>
+ <P> ejemplo </P>
+<UL>
+<LI>FORL081124MBCLMZA3</LI>
+</UL>
+<BR>
+<P> Ingresa tus apellidos y/o nombres como lo indica el formulario</P>
+<P>EJEMPLO</P>
+<UL>
+<LI> Maximo Morales Estrella </LI>
+</UL>
+<P> INGRESA EL MOTIVO DE TU CITA, SOLO PALABRAS CORTAS</P>
+<P>Ejemplo </P>
+<UL>
+<LI> Dolor estomacal </LI>
+</UL>
+    
+
+    <div id="contenido">
+    <form method="" action="">
+        <fieldset>
+            <legend> Agenda tu cita </legend>
+            <label for="curpnss">Ingresa tu CURP o NSS:</label><br>
+            <input  name="curpnss" id="curpnss" placeholder="CURP o NSS" required="true">
+            <br>
+            <br>
+            <label for="ap">Ingresa tu apellido paterno:</label><br>
+            <input  name="ap"   id="ap"placeholder="apellido paterno" required> 
+            <br>
+            <br>
+             <label for="am">Ingresa tu apellido materno:</label><br>
+            <input  name="am" id="am" placeholder="apellido materno" required="true">
+            <br>
+            <br>
+            <label for="no">Ingresa tu nombre(s):</label><br>
+            <input  name="no"   id="no" placeholder="nombre(s) completo" required> 
+            <br>
+            <br>
+              <label for="mo">Motivo de tu consulta:</label><br>
+            <input  name="mo"   id="mo" placeholder="motivo" required>
+         
+            <br>
+            <br>
+             <label for="da">Fecha en que realizas la cita:</label><br>
+            <input type="date" name="da" id="da"  required="true">
+            <br>
+            <br>
+            <label for="ed">Ingresa tu edad:</label><br>
+            <input  name="ed"   id="ed" placeholder="edad en numeros" required> 
+            <br>
+            <br>
+            <button type="button" onclick="cita()" >Crear mi cita</button>
+            
+        </fieldset>
+        </form>
+    </div>
+<br>
+<br>
+</main>
+<footer>
+
+    <table class="Tpie" border="0">
+        <tr>
+<td class="pie">David Aguirre Ramirez<br> 
+Brisa Fernanda Amaro Garcia</td>
+<td class="pie">Luz Marely Flores Ramirez<br>
+Carolina Guillermo Martinez</td>
+<td class="pie">Estrella Maximo Morales<br> 
+Alejandro Trejo Palacios</td>
+</tr>
+</table> 
+<img src="img/Logof.PNG"  width="20" height="20" > Clinica Santa Cruz Tepexpan</img> <br> 
+<img src="img/Logoi.PNG"  width="40" height="20">clinica_santa_cruz <br> 
+</p>
+</footer>
+</body>
+
+<script>
+    function cita(){
+        alert("Tu cita se ha creado exitosamente! :)");
+    }
+</script>
+
+</HTML>
